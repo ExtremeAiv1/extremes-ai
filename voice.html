@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Extreme Ai</title>
+   <link rel="shortcut icon" type="x-icon" href="images/chatbot.jpg">
+   <link rel="stylesheet" href="voice.css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   <nav>
+      <ul>
+         <li class="logo">Extreme Ai</li>
+         <li class="items"><a href="index.html">Home</a></li>
+      
+         <li class="items"><a href="chat.html">Ai Chat</a></li>
+         <li class="items"><a href="voice.html">Voice Assistant</a></li>
+         <li class="items"><a href="ai-image-generator.html">Image Generator</a></li>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+
+   <section class="main">
+    <div class="image-container">
+        <div class="image">
+            <img src="images/assis.gif" alt="image">
+        </div>
+        <h1>Extreme Ai</h1>
+        <p>I'm a Virtual Assistant how can i help you</p>
+    </div>
+    <div class="input">
+        <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+        <h1 class="content"> Click here to speak</h1>
+    </div>
+</section>
+
+<!------- Js Linkage --------->
+<script src="voice.js"></script>
+
+   <script>
+      $(document).ready(function(){
+      $('.btn').click(function(){
+      $('.items').toggleClass("show");
+      $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+
+</body>
+</html>

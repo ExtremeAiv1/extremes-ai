@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Extreme Ai</title>
+   <link rel="shortcut icon" type="x-icon" href="images/chatbot.jpg">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+   <nav>
+      <ul>
+         <li class="logo">Extreme Ai</li>
+         <li class="items"><a href="index.html">Home</a></li>
+      
+         <li class="items"><a href="chat.html">Ai Chat</a></li>
+         <li class="items"><a href="voice.html">Voice Assistant</a></li>
+         <li class="items"><a href="ai-image-generator.html">Image Generator</a></li>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+   <section class="hero-section">
+      <div class="hero">
+        <h2>Extreme Ai</h2>
+        <p>
+          Welcome to Extreme AI website! Generate unique images, chat 
+          with our intelligent AI, and enjoy hands-free interactions with our
+          Voice Assistant. Experience the future of AI innovation now!
+        </p>
+        <div class="buttons">
+          <a href="chat.html" class="join">Try ChatBot</a>
+          <a href="voice.html" class="learn">Try Assistant</a>
+        </div>
+      </div>
+      <div class="img">
+        <img src="images/hero-bg.png" alt="hero image" />
+      </div>
+    </section>
+
+   <script>
+      $(document).ready(function(){
+      $('.btn').click(function(){
+      $('.items').toggleClass("show");
+      $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+
+</body>
+</html>
